@@ -9,7 +9,7 @@ export const App = () => {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      
+
       <Profile
         username={user.username}
         tag={user.tag}
@@ -17,7 +17,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-
+    
     </div>
   );
 };
