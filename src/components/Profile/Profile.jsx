@@ -5,7 +5,7 @@ import { ProfileCard } from './Profile.styled'
 export const Profile = (props) => {
     const { username, tag, location, avatar, stats } = props;
 
-    return <ProfileCard className="profile">
+    return <ProfileCard>
         <div className="description">
             <img
                 src={avatar ?? defaultImage}
