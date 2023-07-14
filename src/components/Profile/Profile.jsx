@@ -2,10 +2,8 @@ import PropTypes from 'prop-types';
 import defaultImage from '../../utils/defaultImage.jpg';
 import { ProfileCard } from './Profile.styled'
 
-const Profile = (props) => {
+export const Profile = (props) => {
     const { username, tag, location, avatar, stats } = props;
-
-  console.log(props);
 
     return <ProfileCard className="profile">
         <div className="description">
@@ -47,5 +45,3 @@ Profile.propTypes = {
         likes: PropTypes.number.isRequired,      
     }),
 };
-
-export default Profile;
