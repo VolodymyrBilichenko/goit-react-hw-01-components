@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import defaultImage from '../../utils/defaultImage.jpg';
 import { ProfileCard } from './Profile.styled'
 
-export const Profile = (props) => {
-    const { username, tag, location, avatar, stats } = props;
+export const Profile = ({ username, tag, location, avatar, stats }) => (
 
-    return <ProfileCard>
+    <ProfileCard>
         <div className="description">
             <img
                 src={avatar ?? defaultImage}
@@ -32,7 +31,7 @@ export const Profile = (props) => {
             </li>
         </ul>
     </ProfileCard>
-};
+);
 
 Profile.propTypes = {
     avatar: PropTypes.string.isRequired,
