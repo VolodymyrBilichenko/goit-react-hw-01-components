@@ -21,8 +21,4 @@ export const TransactionBlock = styled.table`
         color: #f5f5f5;
         opacity: 0.5;
     }
-
-    td{
-
-    }
 `
